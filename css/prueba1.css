@@ -1,0 +1,153 @@
+/* Fondo */
+body {
+    margin: 0;
+    background-image: url('../imgs/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Icono del gato */
+.icono-gato {
+    color: #d8c9a0; 
+    font-size: 50px; 
+    transition: transform 0.3s ease;
+    left: 10%;
+}
+
+.icono-gato:hover {
+    transform: scale(1.2);
+}
+
+/* Barra de menú sticky */
+.menusticky {
+    width: 93%;
+    margin: 2% auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menusticky ul {
+    background-color: #3D3D3D;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ajusta los elementos en pantallas pequeñas */
+}
+
+.menusticky ul li {
+    background-color: #3D3D3D;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menusticky ul li:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.menusticky ul li.active {
+    background-color: #ffadb8;
+    color: white;
+}
+
+.menusticky ul li:focus {
+    outline: none;
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.menusticky ul li.inactive {
+    background-color: #b3b3b3;
+    color: #666;
+}
+
+/* Contenedor principal */
+.contenedor1 {
+    width: 93%;
+    height: 70%;
+    background-color: #FFFAEC;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.imagen1 {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    max-width: 600px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+}
+
+/* Segundo contenedor */
+.contenedor2 {
+    width: 93%;
+    height: 35%;
+    background-color: #F5ECD5;
+    position: absolute;
+    top: 74.5%;
+    left: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icono flotante */
+.contenedor-icono {
+    width: 10%;
+    height: 10.5%;
+    position: absolute;
+    top: 36px;
+    left: 3%;
+    display: flex;
+    z-index: 4;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Menú en pantallas más pequeñas */
+    .menusticky ul {
+        flex-direction: column; /* Cambia la barra de menú a una columna */
+        align-items: flex-start;
+    }
+
+    .menusticky ul li {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    /* Imagen ajustada */
+    .imagen1 {
+        width: 80%; /* Ajusta la imagen a un 80% del contenedor */
+    }
+
+    .contenedor1 {
+        height: auto; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .icono-gato {
+        font-size: 35px; /* Reducción del tamaño del icono en pantallas pequeñas */
+    }
+
+    .menusticky ul li {
+        padding: 10px;
+    }
+
+    .imagen1 {
+        width: 90%; /* Ajusta aún más la imagen */
+    }
+}

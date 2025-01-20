@@ -1,0 +1,122 @@
+/*color de fondo*/
+body {
+    margin: 0;
+    background-image: url('../imgs/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.icono-gato {
+    color: #d8c9a0; 
+    font-size: 50px; 
+    margin-right: 100%;
+    transition: transform 0.3s ease;
+    left: 10%;
+  }
+
+  .icono-gato:hover {
+    transform: scale(1.2);
+    
+  }
+/*barra menu*/
+  .menusticky {
+    width: 93%;
+    margin-right: 4%;
+    margin-left: 3%;
+    margin-top: 2%;
+    position: absolute;
+   
+   flex-wrap: wrap;
+}
+
+.menusticky ul {
+    background-color: #3D3D3D;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menusticky ul li {
+    background-color: #3D3D3D;
+    color: white;
+    display: inline;
+    padding: 10px 20px;
+    margin-right: 5%;
+    margin-left: 100px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.menusticky ul li:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+.menusticky ul li.active {
+    background-color: #ffadb8;
+    color: white;
+}       
+.menusticky ul li:focus {
+    outline: none;
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.menusticky ul li.inactive {
+    background-color: #b3b3b3;
+    color: #666;
+}
+
+
+/*Inicio*/
+.contenedor1 {
+    width: 93%;
+    height: 70%;
+    background-color: #FFFAEC;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    display: flex;
+
+  }
+
+
+  .imagen1 {
+    display: flex; 
+    margin-top: 15%;
+    gap: 15%;
+    width: 20%;
+    height: 30%;
+    margin-left: 15%;
+}
+
+
+
+  .contenedor2 {
+    width: 93%;
+    height: 35%;
+    background-color: #F5ECD5;
+    position: absolute;
+    top: 74.5%;
+    left: 3%;
+    display: flex;
+
+  }
+  .contenedor-icono{
+    width: 10%;
+    height: 10.5%;
+
+    position: absolute;
+    top: 36px;
+    left: 3%;
+    display: flex;
+    z-index: 4;
+
+  }
+  
+  
