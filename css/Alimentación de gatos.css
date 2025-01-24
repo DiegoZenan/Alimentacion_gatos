@@ -120,6 +120,15 @@ body {
     border-radius: 8px;
     position: absolute;
 }
+.contenedor1 .imagen2 {
+  display: flex; 
+  margin-top: 300px;
+  width: 300px;
+  height: 300px;
+  margin-left: 1380px;
+  border-radius: 8px;
+  position: absolute;
+}
 
 
 
