@@ -24,7 +24,7 @@ body {
     margin-right: 4%;
     margin-left: 3%;
     margin-top: 2%;
-    position: absolute;
+    position: sticky;
    
    flex-wrap: wrap;
 }
@@ -78,7 +78,7 @@ body {
     width: 93%;
     height: 70%;
     background-color: #FFFAEC;
-    position: absolute;
+    position: relative;
     top: 14.1%;
     left: 3%;
     display: flex;
@@ -98,7 +98,7 @@ body {
   }
     .contenedor1 .texto2 {
       width: 60%;
-      border: 2px none
+      border: 2px none;
       text-align: center;
       color: #578E7E;
       border-radius: 10px;
@@ -118,25 +118,39 @@ body {
     height: 300px;
     margin-left: 50px;
     border-radius: 8px;
-    position: absolute;
+    position: relative;
+}
+.contenedor1 .texto3 {
+  width: 60%;
+  border: 2px none;
+  text-align: justify;
+  color: #578E7E;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: none;
+  display: flex;
+  position: absolute; 
+  top: 400px;
+  left: 20%;   
+  margin-left: 10px;
 }
 .contenedor1 .imagen2 {
   display: flex; 
   margin-top: 300px;
   width: 300px;
   height: 300px;
-  margin-left: 1380px;
+  left: 1100px;
   border-radius: 8px;
-  position: absolute;
+  position: relative;
 }
 
 
 
   .contenedor2 {
     width: 93%;
-    height: 35%;
+    height: 100%;
     background-color: #F5ECD5;
-    position: absolute;
+    position: relative;
     top: 74.5%;
     left: 3%;
     display: flex;
