@@ -119,9 +119,9 @@ body {
     margin-top: 100px;
     width: 400px;
     height: 400px;
-    left: 5%;
+    right: 25%;
     border-radius: 8px;
-    position: fixed;
+    position: relative;
     opacity: 1;
 }
 .contenedor1 .texto3 {
@@ -144,7 +144,6 @@ body {
   margin-top: 300px;
   width: 300px;
   height: 300px;
-  left: ;
   border-radius: 8px;
   position: relative;
 }

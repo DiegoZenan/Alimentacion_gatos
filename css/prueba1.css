@@ -1,153 +1,133 @@
-/* Fondo */
+/* Color de fondo */
 body {
     margin: 0;
     background-image: url('../imgs/fondo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: Arial, sans-serif;
 }
 
-/* Icono del gato */
 .icono-gato {
-    color: #d8c9a0; 
-    font-size: 50px; 
+    color: #d8c9a0;
+    font-size: 50px;
     transition: transform 0.3s ease;
-    left: 10%;
+    margin-right: 10px;
 }
 
 .icono-gato:hover {
     transform: scale(1.2);
 }
 
-/* Barra de menú sticky */
+/* Barra de menú */
 .menusticky {
-    width: 93%;
-    margin: 2% auto;
+    width: 100%;
     position: sticky;
     top: 0;
+    background-color: #3D3D3D;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menusticky ul {
-    background-color: #3D3D3D;
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Ajusta los elementos en pantallas pequeñas */
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .menusticky ul li {
-    background-color: #3D3D3D;
     color: white;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px 20px;
+    padding: 15px 20px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.menusticky ul li:hover {
+.menusticky ul li:hover, 
+.menusticky ul li:focus {
     background-color: #ff4d4d;
     color: #fff;
 }
 
 .menusticky ul li.active {
     background-color: #ffadb8;
-    color: white;
 }
 
-.menusticky ul li:focus {
-    outline: none;
-    background-color: #ff4d4d;
-    color: white;
-}
-
-.menusticky ul li.inactive {
-    background-color: #b3b3b3;
-    color: #666;
-}
-
-/* Contenedor principal */
+/* Sección de Inicio */
 .contenedor1 {
-    width: 93%;
-    height: 70%;
-    background-color: #FFFAEC;
-    position: absolute;
-    top: 5%;
-    left: 3%;
+    width: 90%;
+    background-color: rgba(255, 250, 236, 0.90);
+    margin: 50px auto;
     display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-.imagen1 {
-    width: 100%; /* Ocupa el 100% del contenedor */
-    max-width: 600px; /* Limita el tamaño máximo de la imagen */
+.contenedor1 .texto {
+    width: 90%;
+    max-width: 800px;
+    color: #578E7E;
+    padding: 10px;
+}
+
+.contenedor1 .texto2, 
+.contenedor1 .texto3 {
+    width: 90%;
+    max-width: 800px;
+    text-align: justify;
+    color: #578E7E;
+    padding: 10px;
+    font-size: larger;
+}
+
+.contenedor1 .imagen1, 
+.contenedor1 .imagen2 {
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
-/* Segundo contenedor */
+@media (max-width: 768px) {
+    .contenedor1 {
+        width: 95%;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .contenedor1 .texto, 
+    .contenedor1 .texto2, 
+    .contenedor1 .texto3 {
+        width: 100%;
+        font-size: medium;
+    }
+    .contenedor1 .imagen1, 
+    .contenedor1 .imagen2 {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Segunda sección */
 .contenedor2 {
-    width: 93%;
-    height: 35%;
+    width: 90%;
     background-color: #F5ECD5;
-    position: absolute;
-    top: 74.5%;
-    left: 3%;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* Icono flotante */
-.contenedor-icono {
-    width: 10%;
-    height: 10.5%;
-    position: absolute;
-    top: 36px;
-    left: 3%;
-    display: flex;
-    z-index: 4;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    /* Menú en pantallas más pequeñas */
-    .menusticky ul {
-        flex-direction: column; /* Cambia la barra de menú a una columna */
-        align-items: flex-start;
-    }
-
-    .menusticky ul li {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 15px;
-    }
-
-    /* Imagen ajustada */
-    .imagen1 {
-        width: 80%; /* Ajusta la imagen a un 80% del contenedor */
-    }
-
-    .contenedor1 {
-        height: auto; /* Ajusta la altura para pantallas pequeñas */
-    }
-}
-
-@media (max-width: 480px) {
-    .icono-gato {
-        font-size: 35px; /* Reducción del tamaño del icono en pantallas pequeñas */
-    }
-
-    .menusticky ul li {
-        padding: 10px;
-    }
-
-    .imagen1 {
-        width: 90%; /* Ajusta aún más la imagen */
-    }
+    padding: 20px;
+    border-radius: 10px;
 }
