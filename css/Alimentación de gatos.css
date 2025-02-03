@@ -78,9 +78,11 @@ body {
   background-color: rgba(255, 250, 236, 0.90);
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items:center;
   position: relative;
+  flex-wrap: wrap;
+  
   z-index: -1;
 }
 
@@ -109,7 +111,7 @@ body {
   height: auto;
   border-radius: 8px;
   margin: 20px 0;
-  display: flex;
+  
 }
 .contenedor1 .imagen2 {
   width: 80%;
@@ -122,8 +124,9 @@ body {
 /* Contenedor 2 */
 .contenedor2 {
   width: 93%;
-  height: auto;
+  height: 50%;
   background-color: #F5ECD5;
+  top: -2vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
