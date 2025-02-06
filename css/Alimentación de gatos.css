@@ -136,6 +136,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  z-index: -1;
 }
 
 .contenedor2 .texto3{
@@ -145,8 +146,8 @@ body {
   border-radius: 10px;
   padding: 10px;
   margin: 20px 0;
-  margin-left: auto;
-  margin-right: auto;
+  align-self: center;
+ 
 }
 .contenedor2 .texto4{
   width: 80%;
@@ -156,23 +157,39 @@ body {
   border-radius: 10px;
   padding: 10px;
   font-size: larger;
-  margin-left: 100PX;
+  align-self: center;
 }
 .contenedor2 ul {
   
   list-style-type: square;
+  align-self: center;
+  font-size: large
   
 }
 .contenedor2 ul li{
   color: #578E7E;
 }
 
-.contenedor2 .imagen22 {
-  max-width: 600px;
-  height: auto;
-  border-radius: 8px;
-  margin: 20px 0;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+.contenedor2 .texto5{
+  width: 80%;
+  border: none;
+  color: #578E7E;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: larger;
+  align-self: auto;
+}
+.contenedor2 .texto6{
+  width: 80%;
+  border: none;
+  color: #578E7E;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: larger;
+  align-self: center;
+}
+/* video sacado de: https://www.pexels.com/es-es/video/gato-negro-comiendo-855402/ */
+.contenedor2 .video1{
+  width: 600px; 
+  
 }
