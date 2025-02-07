@@ -113,8 +113,8 @@ body {
   height: auto;
   border-radius: 8px;
   margin: 20px 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 300px;
+
 }
 .contenedor1 .imagen2 {
   max-width: 600px;
@@ -122,8 +122,8 @@ body {
   border-radius: 8px;
   margin: 20px 0;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 200px;
+  align-self: normal;
 }
 /* Contenedor 2 */
 .contenedor2 {

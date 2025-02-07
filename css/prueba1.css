@@ -5,129 +5,204 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
-}
-
-.icono-gato {
-    color: #d8c9a0;
-    font-size: 50px;
+  }
+  
+  /* Icono gato */
+  .icono-gato {
+    color: #d8c9a0; 
+    font-size: 5vw;
+    margin-right: auto;
     transition: transform 0.3s ease;
-    margin-right: 10px;
-}
-
-.icono-gato:hover {
+    left: 10%;
+  }
+  
+  .icono-gato:hover {
     transform: scale(1.2);
-}
-
-/* Barra de menú */
-.menusticky {
-    width: 100%;
+  }
+  
+  /* Barra de menú */
+  .menusticky {
+    width: 93%;
+    margin: 2% auto;
     position: sticky;
     top: 0;
-    background-color: #3D3D3D;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.menusticky ul {
+  }
+  
+  .menusticky ul {
+    background-color: #3D3D3D;  
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     flex-wrap: wrap;
-}
-
-.menusticky ul li {
+  }
+  
+  .menusticky ul li {
+    background-color: #3D3D3D;
     color: white;
-    padding: 15px 20px;
+    padding: 10px 2vw;
+    margin: 1% 2%;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.menusticky ul li:hover, 
-.menusticky ul li:focus {
+  }
+  
+  .menusticky ul li:hover {
     background-color: #ff4d4d;
     color: #fff;
-}
-
-.menusticky ul li.active {
+  }
+  
+  .menusticky ul li.active {
     background-color: #ffadb8;
-}
-
-/* Sección de Inicio */
-.contenedor1 {
-    width: 90%;
+    color: white;
+  }
+  
+  .menusticky ul li:focus {
+    outline: none;
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .menusticky ul li.inactive {
+    background-color: #b3b3b3;
+    color: #666;
+  }
+  
+  /* Inicio */
+  .contenedor1 {
+    width: 93%;
+    top: -2vw;
+    height: auto;
     background-color: rgba(255, 250, 236, 0.90);
-    margin: 50px auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    position: relative;
+    flex-wrap: wrap;
+    
+    z-index: -1;
+  }
+  
+  .contenedor1 .texto {
+    width: 80%;
+    text-align: center;
+    color: #578E7E;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    margin-left: 100PX;
+  }
+  
+  .contenedor1 .texto2 {
+    width: 80%;
+    border: none;
+    text-align: center;
+    color: #578E7E;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+    margin-left: 100PX;
+  }
+  
+  .contenedor1 .imagen1{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    margin-left: 300px;
+  
+  }
+  .contenedor1 .imagen2 {
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    display: flex;
+    margin-left: 200px;
+    align-self: normal;
+  }
+  /* Contenedor 2 */
+  .contenedor2 {
+    width: 93%;
+    height: 50%;
+    background-color: rgba(245, 236, 213, 0.90);
+    top: -2vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .contenedor2 .texto3{
+    width: 80%;
     text-align: center;
-    flex-wrap: wrap;
-}
-
-.contenedor1 .texto {
-    width: 90%;
-    max-width: 800px;
-    color: #578E7E;
+    color: #639788;
+    border-radius: 10px;
     padding: 10px;
-}
-
-.contenedor1 .texto2, 
-.contenedor1 .texto3 {
-    width: 90%;
-    max-width: 800px;
-    text-align: justify;
+    margin: 20px 0;
+    align-self: center;
+   
+  }
+  .contenedor2 .texto4{
+    width: 80%;
+    border: none;
+    text-align: center;
     color: #578E7E;
+    border-radius: 10px;
     padding: 10px;
     font-size: larger;
-}
-
-.contenedor1 .imagen1, 
-.contenedor1 .imagen2 {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-    .contenedor1 {
-        width: 95%;
-        padding: 10px;
-        flex-direction: column;
-    }
-    .contenedor1 .texto, 
-    .contenedor1 .texto2, 
-    .contenedor1 .texto3 {
-        width: 100%;
-        font-size: medium;
-    }
-    .contenedor1 .imagen1, 
-    .contenedor1 .imagen2 {
-        max-width: 100%;
-        width: auto;
-        height: auto;
-    }
-}
-
-/* Segunda sección */
-.contenedor2 {
-    width: 90%;
-    background-color: #F5ECD5;
-    margin: 50px auto;
+    align-self: center;
+  }
+  .contenedor2 ul {
+    
+    list-style-type: square;
+    align-self: center;
+    font-size: large
+    
+  }
+  .contenedor2 ul li{
+    color: #578E7E;
+  }
+  .contenedor3 {
+    width: 93%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: -2vw;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
+    position: relative;
+    z-index: 5s;
+  }
+  
+  .contenedor3 .texto5{
+    width: 80%;
+    border: none;
+    color: #578E7E;
     border-radius: 10px;
-}
+    padding: 10px;
+    font-size: larger;
+    align-self: auto;
+  }
+  .contenedor3 .texto6{
+    width: 80%;
+    border: none;
+    color: #578E7E;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+    align-self: center;
+  }
+  /* video sacado de: https://www.pexels.com/es-es/video/gato-negro-comiendo-855402/ */
+  .contenedor3 .video1{
+    width: 600px; 
+    
+  }
+  
