@@ -243,7 +243,8 @@ body {
   z-index: -1;
 }
 .contenedor4 .texto7{
- 
+  width: 80%;
+  border: none;
   color: #FFFAEC;
   
   width: 80%;

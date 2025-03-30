@@ -27,12 +27,11 @@ body {
   margin: 2% auto;
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 .menusticky ul {
-  background-color: #3D3D3D;
-  list-style: none;
+  background-color: #3D3D3D;  
+  list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -42,6 +41,7 @@ body {
 }
 
 .menusticky ul li {
+  text-decoration: none;
   background-color: #3D3D3D;
   color: white;
   padding: 10px 2vw;
@@ -51,11 +51,9 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.menusticky ul li:hover, 
-.menusticky ul li:focus {
+.menusticky ul li:hover {
   background-color: #ff4d4d;
   color: #fff;
-  outline: none;
 }
 
 .menusticky ul li.active {
@@ -63,9 +61,39 @@ body {
   color: white;
 }
 
+.menusticky ul li:focus {
+  outline: none;
+  background-color: #ff4d4d;
+  color: white;
+}
+
 .menusticky ul li.inactive {
   background-color: #b3b3b3;
   color: #666;
+}
+/*Estilo de los enlaces en el encabezado*/
+.menusticky ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 2vw;
+}
+
+
+.menusticky ul li a:hover {
+  color: #fff;
+  background-color: #ff4d4d; 
+}
+
+
+.menusticky ul li a:visited {
+  color: white;
+}
+
+
+.menusticky ul li a:active {
+  color: white;
+  background-color: #ffadb8;
 }
 
 /* Contenedor principal */
@@ -73,15 +101,15 @@ body {
   width: 93%;
   top: -2vw;
   height: auto;
-  background-color: rgba(255, 250, 236, 0.9);
+  background-color: rgba(255, 250, 236, 0.90);
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items:center;
   position: relative;
   flex-wrap: wrap;
-  z-index: 1;
-  padding: 20px;
+  
+  z-index: -1;s
 }
 
 .contenedor1 .texto,
