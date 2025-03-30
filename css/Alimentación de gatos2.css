@@ -1,0 +1,115 @@
+/* Color de fondo */
+body {
+    margin: 0;
+    background-image: url('../imgs/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Icono gato */
+  .icono-gato {
+    color: #d8c9a0; 
+    font-size: 5vw;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+    left: 10%;
+  }
+  
+  .icono-gato:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Barra de menú */
+  .menusticky {
+    width: 93%;
+    margin: 2% auto;
+    position: sticky;
+    top: 0;
+  }
+  
+  .menusticky ul {
+    background-color: #3D3D3D;  
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .menusticky ul li {
+    background-color: #3D3D3D;
+    color: white;
+    padding: 10px 2vw;
+    margin: 1% 2%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menusticky ul li:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+  }
+  
+  .menusticky ul li.active {
+    background-color: #ffadb8;
+    color: white;
+  }
+  
+  .menusticky ul li:focus {
+    outline: none;
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .menusticky ul li.inactive {
+    background-color: #b3b3b3;
+    color: #666;
+  }
+  .contenedor1 {
+    width: 93%;
+    top: -2vw;
+    height: auto;
+    background-color: rgba(255, 250, 236, 0.90);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    position: relative;
+    flex-wrap: wrap;
+    
+    z-index: -1;
+  }
+  
+  .contenedor1 .texto {
+    width: 80%;
+    text-align: center;
+    color: #578E7E;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    margin-left: 100PX;
+  }
+  
+  .contenedor1 .texto2 {
+    width: 80%;
+    border: none;
+    text-align: center;
+    color: #578E7E;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+    margin-left: 100PX;
+  }
+  .contenedor1 .imagen1{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 42%;
+ 
+  }
+ 

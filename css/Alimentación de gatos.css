@@ -40,6 +40,7 @@ body {
 }
 
 .menusticky ul li {
+  text-decoration: none;
   background-color: #3D3D3D;
   color: white;
   padding: 10px 2vw;
@@ -68,6 +69,30 @@ body {
 .menusticky ul li.inactive {
   background-color: #b3b3b3;
   color: #666;
+}
+/*Estilo de los enlaces en el encabezado*/
+.menusticky ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px 2vw;
+}
+
+
+.menusticky ul li a:hover {
+  color: #fff;
+  background-color: #ff4d4d; 
+}
+
+
+.menusticky ul li a:visited {
+  color: white;
+}
+
+
+.menusticky ul li a:active {
+  color: white;
+  background-color: #ffadb8;
 }
 
 /* Inicio */
@@ -203,6 +228,7 @@ body {
 .contenedor3 .video1{
   width: 600px; 
   
+  
 }
 .contenedor4 {
   width: 93%;
@@ -224,4 +250,19 @@ body {
   padding: 10px;
   font-size: larger;
   align-self: self-end;
+}
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: darkblue;
 }
