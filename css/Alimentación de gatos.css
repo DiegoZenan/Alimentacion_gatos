@@ -14,7 +14,6 @@ body {
   margin-right: auto;
   transition: transform 0.3s ease;
   left: 10%;
-  
 }
 
 .icono-gato:hover {
@@ -30,6 +29,7 @@ body {
   z-index: 1;
 }
 
+/* Estilo de la lista del menú */
 .menusticky ul {
   background-color: #3D3D3D;  
   list-style-type: none;
@@ -41,6 +41,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Estilo de los elementos del menú */
 .menusticky ul li {
   text-decoration: none;
   background-color: #3D3D3D;
@@ -52,17 +53,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
-/*Estilo de los enlaces en el encabezado*/
-.menusticky ul li a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 10px 2vw;
-}
-
-
-/*Estilo de los enlaces en el encabezado*/
+/* Estilo de los enlaces dentro del menú */
 .menusticky ul li a {
   text-decoration: none;
   color: white;
@@ -115,8 +106,8 @@ body {
   border-radius: 8px;
   margin: 20px 0;
   margin-left: 300px;
-
 }
+
 .contenedor1 .imagen2 {
   max-width: 600px;
   height: auto;
@@ -126,12 +117,12 @@ body {
   margin-left: 200px;
   align-self: normal;
 }
+
 /* Contenedor 2 */
 .contenedor2 {
   width: 93%;
   height: 50%;
   background-color: rgba(245, 236, 213, 0.90);
- 
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -148,8 +139,8 @@ body {
   padding: 10px;
   margin: 20px 0;
   align-self: center;
- 
 }
+
 .contenedor2 .texto4{
   width: 80%;
   border: none;
@@ -160,22 +151,22 @@ body {
   font-size: larger;
   align-self: center;
 }
+
 .contenedor2 ul {
-  
   list-style-type: square;
   align-self: center;
   font-size: large
-  
 }
+
 .contenedor2 ul li{
   color: #578E7E;
 }
+
 /*Contenedor 3*/
 .contenedor3 {
   width: 93%;
   height: 50%;
   background-color: rgba(87, 142, 126, 0.9);
-  
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -183,6 +174,7 @@ body {
   position: relative;
   z-index: -1;
 }
+
 .contenedor3 .texto5,
 .contenedor3 .texto6 {
   position: relative;
@@ -192,27 +184,27 @@ body {
   font-size: larger;
   text-align: center;
 }
+
 .contenedor3_4 {
- 
-    width: 93%;
-    height: 70vh;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+  width: 93%;
+  height: 70vh;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
+
 .contenedor3_4 p {
   color: #ffffff;
   font-size: 1.2rem;
   position: relative;
   z-index: 1;
-  
 }
 
 /* Estilo para el video de fondo */
@@ -240,22 +232,21 @@ body {
   justify-content: center;
   flex-grow: 1;
   margin-bottom: 0%;
-
 }
+
 .contenedor4 .texto7{
   width: 80%;
   border: none;
   color: #FFFAEC;
-  
   width: 80%;
   text-align: center;
- 
   border-radius: 10px;
   padding: 10px;
   margin: 20px 0;
   margin-left: 100PX;
 }
-/*Galeria responsive*/
+
+/* Galeria responsive */
 .contenedor4 .galeria {
   width: 100%;
   display: flex;
@@ -287,7 +278,6 @@ body {
   border-radius: 8px;
 }
 
-
 @media screen and (max-width: 1024px) {
   .contenedor4 .columna {
       flex: 50%;
@@ -310,8 +300,8 @@ footer {
   text-align: center;
   font-size: 1rem;
   position: relative;
-  width: 93%; /* Asegura que el footer tenga el mismo ancho que el contenedor */
-  margin: 0 auto; /* Centra el footer */
+  width: 93%;
+  margin: 0 auto;
 }
 
 .footer-content {
@@ -354,23 +344,69 @@ footer {
   .footer-links a {
     margin: 0.5rem 0;
   }
+
+  /* Ajustes del menu */
+  .menusticky ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menusticky ul li {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .menusticky ul li a {
+    padding: 10px;
+  }
+
+  /*contenedor principal */
+  .contenedor1 {
+    flex-direction: column;
+  }
+
+  .contenedor1 .imagen1 {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contenedor1 .texto,
+  .contenedor1 .texto2 {
+    font-size: 1.2rem;
+  }
+
+  /*pie de página */
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .footer-links a {
+    margin: 0.5rem 0;
+  }
 }
+
 @media (max-width: 600px) {
   .contenedor3_4 {
-    width: 95%; /* Ancho más grande para pantallas pequeñas */
-    height: 40vh; /* Menor altura para pantallas pequeñas */
-    padding: 15px; /* Menos relleno */
+    width: 95%;
+    height: 40vh;
+    padding: 15px;
   }
 
   .contenedor3_4 p {
-    font-size: 1rem; /* Ajusta el tamaño del texto */
+    font-size: 1rem;
   }
 }
 
-/* Media Query para pantallas medianas (tabletas) */
 @media (max-width: 1024px) {
   .contenedor3_4 {
-    width: 90%; /* Ancho reducido en tabletas */
-    height: 50vh; /* Mantiene la altura en tabletas */
+    width: 90%;
+    height: 50vh;
     padding: 20px;
   }
+}

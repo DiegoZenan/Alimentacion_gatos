@@ -8,32 +8,32 @@ html, body {
     background-position: center;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
-  }
+}
   
-  /* Icono gato */
-  .icono-gato {
+/* Icono gato */
+.icono-gato {
     color: #d8c9a0; 
     font-size: 5vw;
     margin-right: auto;
     transition: transform 0.3s ease;
     left: 10%;
-    
-  }
+}
   
-  .icono-gato:hover {
+.icono-gato:hover {
     transform: scale(1.2);
-  }
+}
   
-  /* Barra de menú */
-  .menusticky {
+/* Barra de menú */
+.menusticky {
     width: 93%;
     margin: 0% auto;
     position: sticky;
     top: 0;
     z-index: 1;
-  }
-  
-  .menusticky ul {
+}
+
+/* Estilo de la lista del menú */
+.menusticky ul {
     background-color: #3D3D3D;  
     list-style-type: none;
     padding: 0;
@@ -42,9 +42,10 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  }
-  
-  .menusticky ul li {
+}
+
+/* Estilo de los elementos del menú */
+.menusticky ul li {
     text-decoration: none;
     background-color: #3D3D3D;
     color: white;
@@ -53,26 +54,15 @@ html, body {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  
-  /*Estilo de los enlaces en el encabezado*/
-  .menusticky ul li a {
+}
+
+/* Estilo de los enlaces dentro del menú */
+.menusticky ul li a {
     text-decoration: none;
     color: white;
     display: block;
     padding: 10px 2vw;
-  }
-  
-  
-  /*Estilo de los enlaces en el encabezado*/
-  .menusticky ul li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 10px 2vw;
-  }
-  
+}
 
 /* Inicio */
 .contenedor1 {
@@ -180,37 +170,35 @@ footer {
 
 
 @media (max-width: 768px) {
-    footer .footer-content {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .footer-links {
-      flex-direction: column;
-      margin-top: 1.5rem;
-    }
-  
-    .footer-links a {
-      margin: 0.5rem 0;
-    }
+
     .menusticky ul {
-        display: none;
-        width: 100%;
         flex-direction: column;
-        align-items: center;
-        padding: 0;
+        align-items: stretch;
     }
 
+    
     .menusticky ul li {
         width: 100%;
-        padding: 15px 0;
+        margin: 0.5rem 0;
     }
 
-    .menu-toggle {
-        display: block;
-        background-color: #3D3D3D;
-        color: white;
+    
+    .menusticky ul li a {
         padding: 10px;
-        cursor: pointer;
+    }
+    
+   
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .footer-links a {
+        margin: 0.5rem 0;
     }
 }
