@@ -16,3 +16,5 @@ function generarColorAleatorio() {
       item.style.backgroundColor = '';
     });
   });
+
+  

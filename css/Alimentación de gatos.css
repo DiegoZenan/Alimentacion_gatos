@@ -170,6 +170,7 @@ body {
 .contenedor2 ul li{
   color: #578E7E;
 }
+/*Contenedor 3*/
 .contenedor3 {
   width: 93%;
   height: 50%;
@@ -182,30 +183,50 @@ body {
   position: relative;
   z-index: -1;
 }
-.contenedor3 .texto5{
-  width: 80%;
-  border: none;
+.contenedor3 .texto5,
+.contenedor3 .texto6 {
+  position: relative;
+  z-index: 1;
   color: #FFFAEC;
-  border-radius: 10px;
   padding: 10px;
   font-size: larger;
-  align-self: auto;
+  text-align: center;
 }
-.contenedor3 .texto6{
-  width: 80%;
-  border: none;
-  color: #FFFAEC;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: larger;
-  align-self: center;
+.contenedor3_4 {
+ 
+    width: 93%;
+    height: 70vh;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
-/* video sacado de: https://www.pexels.com/es-es/video/gato-negro-comiendo-855402/ */
-.contenedor3 .video1{
-  width: 600px; 
+.contenedor3_4 p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
   
-  
 }
+
+/* Estilo para el video de fondo */
+.contenedor3_4 .video1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.9;
+}
+
 .contenedor4 {
   width: 93%;
   height: 50%;
@@ -334,3 +355,22 @@ footer {
     margin: 0.5rem 0;
   }
 }
+@media (max-width: 600px) {
+  .contenedor3_4 {
+    width: 95%; /* Ancho más grande para pantallas pequeñas */
+    height: 40vh; /* Menor altura para pantallas pequeñas */
+    padding: 15px; /* Menos relleno */
+  }
+
+  .contenedor3_4 p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+  }
+}
+
+/* Media Query para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  .contenedor3_4 {
+    width: 90%; /* Ancho reducido en tabletas */
+    height: 50vh; /* Mantiene la altura en tabletas */
+    padding: 20px;
+  }
