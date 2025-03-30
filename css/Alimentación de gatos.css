@@ -243,26 +243,60 @@ body {
   z-index: -1;
 }
 .contenedor4 .texto7{
-  width: 80%;
-  border: none;
+ 
   color: #FFFAEC;
+  
+  width: 80%;
+  text-align: center;
+ 
   border-radius: 10px;
   padding: 10px;
-  font-size: larger;
-  align-self: self-end;
+  margin: 20px 0;
+  margin-left: 100PX;
 }
-.boton {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background-color: blue;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
+/*Galeria responsive*/
+.contenedor4 .galeria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
 }
 
-.boton:hover {
-  background-color: darkblue;
+.contenedor4 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.contenedor4 .columna {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.contenedor4 .columna img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .contenedor4 .columna {
+      flex: 50%;
+      max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor4 .columna {
+      flex: 100%;
+      max-width: 100%;
+  }
 }
