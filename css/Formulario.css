@@ -1,36 +1,40 @@
 /* Color de fondo */
-body {
+html, body {
+    height: 100%; /* Asegura que el body y html ocupen el 100% de la altura de la pantalla */
     margin: 0;
+    padding: 0;
     background-image: url('../imgs/fondo.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-  }
-  
-  /* Icono gato */
-  .icono-gato {
+    font-family: Arial, sans-serif;
+}
+
+/* Icono gato */
+.icono-gato {
     color: #d8c9a0; 
     font-size: 5vw;
     margin-right: auto;
     transition: transform 0.3s ease;
     left: 10%;
-    
-  }
-  
-  .icono-gato:hover {
+}
+
+.icono-gato:hover {
     transform: scale(1.2);
-  }
-  
-  /* Barra de menú */
-  .menusticky {
+}
+
+/* Barra de menú */
+.menusticky {
     width: 93%;
-    margin: 2% auto;
+    margin: 0% auto;
     position: sticky;
     top: 0;
     z-index: 1;
-  }
-  
-  .menusticky ul {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.menusticky ul {
     background-color: #3D3D3D;  
     list-style-type: none;
     padding: 0;
@@ -39,9 +43,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  }
-  
-  .menusticky ul li {
+    gap: 20px;
+}
+
+.menusticky ul li {
     text-decoration: none;
     background-color: #3D3D3D;
     color: white;
@@ -50,77 +55,71 @@ body {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  
-  /*Estilo de los enlaces en el encabezado*/
-  .menusticky ul li a {
-    text-decoration: none;
+}
+
+.menusticky ul li a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
     display: block;
     padding: 10px 2vw;
-  }
-  
- 
-  /* Inicio */
+}
+
+/* Inicio */
 .contenedor1 {
     width: 93%;
-    top: -2vw;
     height: auto;
     background-color: rgba(255, 250, 236, 0.90);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     position: relative;
     flex-wrap: wrap;
-    
-   
-  }
-  .formulario-container {
+    justify-content: center;
+    flex-grow: 1;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.formulario-container {
     background-color: rgba(255, 250, 236, 0.90);
     padding: 2rem;
     margin: 2rem auto;
     width: 80%;
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.formulario-container h2 {
+h2 {
     text-align: center;
-    margin-bottom: 1rem;
     color: #333;
 }
 
-.formulario-container label {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+label {
     display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
     color: #333;
 }
 
-.formulario-container input {
+input, textarea, select {
     width: 100%;
-    padding: 0.8rem;
-    margin: 0.5rem 0 1rem 0;
+    padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-.formulario-container textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin: 0.5rem 0 1rem 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 1rem;
     resize: vertical;
 }
 
-.formulario-container button {
+button {
     width: 100%;
     padding: 1rem;
-    background-color: #ff4d4d;
+    margin-top: 15px;
+    background: #ff4d4d;
     color: white;
     border: none;
     border-radius: 4px;
@@ -129,6 +128,60 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.formulario-container button:hover {
-    background-color: #e43f3f;
+button:hover {
+    background: #e43f3f;
+}
+
+/* Pie de página */
+footer {
+    background-color: #3D3D3D;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    width: 93%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff4d4d;
+}
+
+
+@media (max-width: 768px) {
+    footer .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-links {
+      flex-direction: column;
+      margin-top: 1.5rem;
+    }
+  
+    .footer-links a {
+      margin: 0.5rem 0;
+    }
 }

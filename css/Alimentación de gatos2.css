@@ -1,10 +1,13 @@
 /* Color de fondo */
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
   background-image: url('../imgs/fondo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-family: Arial, sans-serif;
 }
 
 /* Icono gato */
@@ -24,7 +27,7 @@ body {
 /* Barra de menú */
 .menusticky {
   width: 93%;
-  margin: 2% auto;
+  margin: 0% auto;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -74,17 +77,18 @@ body {
 /* Contenedor principal */
 .contenedor1 {
   width: 93%;
-  top: -2vw;
   height: auto;
   background-color: rgba(255, 250, 236, 0.90);
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   position: relative;
   flex-wrap: wrap;
-  
-  z-index: -1;s
+  justify-content: center;
+  flex-grow: 1;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 
 .contenedor1 .texto,
@@ -107,3 +111,58 @@ body {
   display: block;
 }
 
+/* Pie de página */
+footer {
+  background-color: #3D3D3D;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  width: 93%;
+  margin: 0 auto;
+  margin-top: 0%;
+  
+}
+
+.footer-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff4d4d;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .footer-links a {
+    margin: 0.5rem 0;
+  }
+}
