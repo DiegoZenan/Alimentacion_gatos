@@ -14,6 +14,7 @@ body {
     margin-right: auto;
     transition: transform 0.3s ease;
     left: 10%;
+    
   }
   
   .icono-gato:hover {
@@ -51,26 +52,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  .menusticky ul li:hover {
-    background-color: #ff4d4d;
-    color: #fff;
-  }
   
-  .menusticky ul li.active {
-    background-color: #ffadb8;
-    color: white;
-  }
-  
-  .menusticky ul li:focus {
-    outline: none;
-    background-color: #ff4d4d;
-    color: white;
-  }
-  
-  .menusticky ul li.inactive {
-    background-color: #b3b3b3;
-    color: #666;
-  }
   /*Estilo de los enlaces en el encabezado*/
   .menusticky ul li a {
     text-decoration: none;
@@ -79,23 +61,7 @@ body {
     padding: 10px 2vw;
   }
   
-  
-  .menusticky ul li a:hover {
-    color: #fff;
-    background-color: #ff4d4d; 
-  }
-  
-  
-  .menusticky ul li a:visited {
-    color: white;
-  }
-  
-  
-  .menusticky ul li a:active {
-    color: white;
-    background-color: #ffadb8;
-  }
-
+ 
   /* Inicio */
 .contenedor1 {
     width: 93%;
