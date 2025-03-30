@@ -22,7 +22,7 @@
     </div>
 
     <div class="contenedor1">
-        <!-- Formulario de Contacto -->
+
         <div class="formulario-container">
             <h2>Formulario de Contacto</h2>
             <form action="#" method="post">
@@ -33,7 +33,10 @@
                 <input type="text" id="apellidos" name="apellidos" required>
 
                 <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required placeholder="Ej: 1234567890">
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required placeholder="Ej: 123456789">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
 
                 <button type="submit">Enviar</button>
             </form>

@@ -26,6 +26,7 @@ body {
     margin: 2% auto;
     position: sticky;
     top: 0;
+    z-index: 1;
   }
   
   .menusticky ul {
@@ -108,7 +109,7 @@ body {
     position: relative;
     flex-wrap: wrap;
     
-    z-index: -1;
+   
   }
   .formulario-container {
     background-color: rgba(255, 250, 236, 0.90);
@@ -139,6 +140,15 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
+}
+.formulario-container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: vertical;
 }
 
 .formulario-container button {
